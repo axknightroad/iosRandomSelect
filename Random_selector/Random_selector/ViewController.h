@@ -7,9 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AHRandom.h"
+#import "AHRandomArray.h"
 
 @interface ViewController : UIViewController
+
+@property (strong, nonatomic) AHRandomArray *myRandomArray;
+@property (strong, nonatomic) IBOutlet UITextField *textfiled;
+
+- (IBAction)add:(id)sender;
+- (IBAction)remove:(id)sender;
+- (IBAction)clear;
+- (IBAction)generator;
+
+- (IBAction)textFiledReturnEditing:(id)sender;
 
 
 @end

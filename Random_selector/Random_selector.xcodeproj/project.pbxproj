@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		774638771C048BD900928626 /* AHRandomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 774638761C048BD900928626 /* AHRandomItem.m */; };
 		77998CC21C044AB800B33AF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CC11C044AB800B33AF1 /* main.m */; };
 		77998CC51C044AB800B33AF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CC41C044AB800B33AF1 /* AppDelegate.m */; };
 		77998CC81C044AB800B33AF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CC71C044AB800B33AF1 /* ViewController.m */; };
@@ -16,7 +17,7 @@
 		77998CD31C044AB800B33AF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77998CD11C044AB800B33AF1 /* LaunchScreen.storyboard */; };
 		77998CDE1C044AB800B33AF1 /* Random_selectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CDD1C044AB800B33AF1 /* Random_selectorTests.m */; };
 		77998CE91C044AB800B33AF1 /* Random_selectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CE81C044AB800B33AF1 /* Random_selectorUITests.m */; };
-		77998CF81C044B1700B33AF1 /* AHRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CF71C044B1700B33AF1 /* AHRandom.m */; };
+		77998CF81C044B1700B33AF1 /* AHRandomArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CF71C044B1700B33AF1 /* AHRandomArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		77998CBD1C044AB800B33AF1 /* Random_selector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Random_selector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		774638751C048BD900928626 /* AHRandomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHRandomItem.h; sourceTree = "<group>"; };
+		774638761C048BD900928626 /* AHRandomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHRandomItem.m; sourceTree = "<group>"; };
+		77998CBD1C044AB800B33AF1 /* 随机选择器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "随机选择器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77998CC11C044AB800B33AF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77998CC31C044AB800B33AF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77998CC41C044AB800B33AF1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,8 +57,8 @@
 		77998CE41C044AB800B33AF1 /* Random_selectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Random_selectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77998CE81C044AB800B33AF1 /* Random_selectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Random_selectorUITests.m; sourceTree = "<group>"; };
 		77998CEA1C044AB800B33AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		77998CF61C044B1700B33AF1 /* AHRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHRandom.h; sourceTree = "<group>"; };
-		77998CF71C044B1700B33AF1 /* AHRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHRandom.m; sourceTree = "<group>"; };
+		77998CF61C044B1700B33AF1 /* AHRandomArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHRandomArray.h; sourceTree = "<group>"; };
+		77998CF71C044B1700B33AF1 /* AHRandomArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHRandomArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +99,7 @@
 		77998CBE1C044AB800B33AF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77998CBD1C044AB800B33AF1 /* Random_selector.app */,
+				77998CBD1C044AB800B33AF1 /* 随机选择器.app */,
 				77998CD91C044AB800B33AF1 /* Random_selectorTests.xctest */,
 				77998CE41C044AB800B33AF1 /* Random_selectorUITests.xctest */,
 			);
@@ -106,8 +109,10 @@
 		77998CBF1C044AB800B33AF1 /* Random_selector */ = {
 			isa = PBXGroup;
 			children = (
-				77998CF61C044B1700B33AF1 /* AHRandom.h */,
-				77998CF71C044B1700B33AF1 /* AHRandom.m */,
+				774638751C048BD900928626 /* AHRandomItem.h */,
+				774638761C048BD900928626 /* AHRandomItem.m */,
+				77998CF61C044B1700B33AF1 /* AHRandomArray.h */,
+				77998CF71C044B1700B33AF1 /* AHRandomArray.m */,
 				77998CC31C044AB800B33AF1 /* AppDelegate.h */,
 				77998CC41C044AB800B33AF1 /* AppDelegate.m */,
 				77998CC61C044AB800B33AF1 /* ViewController.h */,
@@ -165,7 +170,7 @@
 			);
 			name = Random_selector;
 			productName = Random_selector;
-			productReference = 77998CBD1C044AB800B33AF1 /* Random_selector.app */;
+			productReference = 77998CBD1C044AB800B33AF1 /* 随机选择器.app */;
 			productType = "com.apple.product-type.application";
 		};
 		77998CD81C044AB800B33AF1 /* Random_selectorTests */ = {
@@ -284,7 +289,8 @@
 				77998CC81C044AB800B33AF1 /* ViewController.m in Sources */,
 				77998CCE1C044AB800B33AF1 /* Random_selector.xcdatamodeld in Sources */,
 				77998CC51C044AB800B33AF1 /* AppDelegate.m in Sources */,
-				77998CF81C044B1700B33AF1 /* AHRandom.m in Sources */,
+				77998CF81C044B1700B33AF1 /* AHRandomArray.m in Sources */,
+				774638771C048BD900928626 /* AHRandomItem.m in Sources */,
 				77998CC21C044AB800B33AF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -427,7 +433,7 @@
 				INFOPLIST_FILE = Random_selector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Axel-Han.Random-selector";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "随机选择器";
 			};
 			name = Debug;
 		};
@@ -438,7 +444,7 @@
 				INFOPLIST_FILE = Random_selector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Axel-Han.Random-selector";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "随机选择器";
 			};
 			name = Release;
 		};
@@ -509,6 +515,7 @@
 				77998CEF1C044AB800B33AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77998CF01C044AB800B33AF1 /* Build configuration list for PBXNativeTarget "Random_selectorTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +524,7 @@
 				77998CF21C044AB800B33AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		77998CF31C044AB800B33AF1 /* Build configuration list for PBXNativeTarget "Random_selectorUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +533,7 @@
 				77998CF51C044AB800B33AF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
