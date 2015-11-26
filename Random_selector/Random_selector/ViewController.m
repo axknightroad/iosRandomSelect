@@ -34,6 +34,7 @@
     [sender resignFirstResponder];
 }
 
+#pragma mark touch down to resign keyboard
 - (IBAction)viewTouchDown:(id)sender {
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
@@ -60,7 +61,7 @@
     [[UIApplication sharedApplication] setStatusBarHidden:NO];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     [super viewDidLoad];
-//    [self setNeedsStatusBarAppearanceUpdate];
+    [self setNeedsStatusBarAppearanceUpdate];
     // Do any additional setup after loading the view, typically from a nib.
     myRandomArray = [[AHRandomArray alloc] init];
     rect = CGRectMake(kdefultX, kdefultY, kdefultWeight, kdefultHeight);
