@@ -9,17 +9,25 @@
 #import <UIKit/UIKit.h>
 #import "AHRandomArray.h"
 
-@interface ViewController : UIViewController
+#define kdefultHeight 40
+#define kdefultWeight 335
+#define kdefultX 20
+#define kdefultY 176
+
+@interface ViewController : UIViewController <UITableViewDataSource,UITableViewDelegate,UIAlertViewDelegate>
 
 @property (strong, nonatomic) AHRandomArray *myRandomArray;
 @property (strong, nonatomic) IBOutlet UITextField *textfiled;
+@property (strong, nonatomic) IBOutlet UITableView *dataTable;
+@property (strong, nonatomic) IBOutlet UILabel *resultLabel;
+@property (nonatomic) CGRect rect;
 
-- (IBAction)add:(id)sender;
-- (IBAction)remove:(id)sender;
+
 - (IBAction)clear;
 - (IBAction)generator;
 
 - (IBAction)textFiledReturnEditing:(id)sender;
+- (IBAction)viewTouchDown:(id)sender;
 
 
 @end

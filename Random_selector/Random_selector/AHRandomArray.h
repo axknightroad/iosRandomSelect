@@ -7,24 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AHRandomItem.h"
-
-#define kdefultHeight 40
-#define kdefultWeight 335
-#define kdefultX 20
-#define kdefultY 136
 
 @interface AHRandomArray : NSObject
 
 @property (strong, nonatomic) NSMutableArray *dataArray;
-@property (nonatomic) CGRect rect;
-@property (strong, nonatomic) IBOutlet UILabel *resultLabel;
-@property (strong, nonatomic) IBOutlet UITableView *dataTable;
 
-
-- (void)add:(AHRandomItem *)object;
-- (NSUInteger)remove:(AHRandomItem *)object;
-- (void)generator;
+- (void)add:(NSString *)object;
+- (void)remove:(NSString *)object;
+- (NSString *)generator;
 - (void)clear;
+
+- (NSUInteger)count;
+- (NSString *)dataAtInedx:(NSUInteger)index;
 
 @end

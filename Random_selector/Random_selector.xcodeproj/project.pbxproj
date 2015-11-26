@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		774638771C048BD900928626 /* AHRandomItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 774638761C048BD900928626 /* AHRandomItem.m */; };
+		7746387A1C06E2C600928626 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 774638791C06E2C600928626 /* Icon.png */; };
 		77998CC21C044AB800B33AF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CC11C044AB800B33AF1 /* main.m */; };
 		77998CC51C044AB800B33AF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CC41C044AB800B33AF1 /* AppDelegate.m */; };
 		77998CC81C044AB800B33AF1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CC71C044AB800B33AF1 /* ViewController.m */; };
@@ -38,8 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		774638751C048BD900928626 /* AHRandomItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHRandomItem.h; sourceTree = "<group>"; };
-		774638761C048BD900928626 /* AHRandomItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHRandomItem.m; sourceTree = "<group>"; };
+		774638791C06E2C600928626 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		77998CBD1C044AB800B33AF1 /* 随机选择器.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "随机选择器.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		77998CC11C044AB800B33AF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77998CC31C044AB800B33AF1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,6 +85,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		774638781C06E2C600928626 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				774638791C06E2C600928626 /* Icon.png */,
+			);
+			path = resource;
+			sourceTree = SOURCE_ROOT;
+		};
 		77998CB41C044AB800B33AF1 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +116,7 @@
 		77998CBF1C044AB800B33AF1 /* Random_selector */ = {
 			isa = PBXGroup;
 			children = (
-				774638751C048BD900928626 /* AHRandomItem.h */,
-				774638761C048BD900928626 /* AHRandomItem.m */,
+				774638781C06E2C600928626 /* resource */,
 				77998CF61C044B1700B33AF1 /* AHRandomArray.h */,
 				77998CF71C044B1700B33AF1 /* AHRandomArray.m */,
 				77998CC31C044AB800B33AF1 /* AppDelegate.h */,
@@ -259,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7746387A1C06E2C600928626 /* Icon.png in Resources */,
 				77998CD31C044AB800B33AF1 /* LaunchScreen.storyboard in Resources */,
 				77998CD01C044AB800B33AF1 /* Assets.xcassets in Resources */,
 				77998CCB1C044AB800B33AF1 /* Main.storyboard in Resources */,
@@ -290,7 +297,6 @@
 				77998CCE1C044AB800B33AF1 /* Random_selector.xcdatamodeld in Sources */,
 				77998CC51C044AB800B33AF1 /* AppDelegate.m in Sources */,
 				77998CF81C044B1700B33AF1 /* AHRandomArray.m in Sources */,
-				774638771C048BD900928626 /* AHRandomItem.m in Sources */,
 				77998CC21C044AB800B33AF1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
