@@ -18,6 +18,7 @@
 		77998CDE1C044AB800B33AF1 /* Random_selectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CDD1C044AB800B33AF1 /* Random_selectorTests.m */; };
 		77998CE91C044AB800B33AF1 /* Random_selectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CE81C044AB800B33AF1 /* Random_selectorUITests.m */; };
 		77998CF81C044B1700B33AF1 /* AHRandomArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 77998CF71C044B1700B33AF1 /* AHRandomArray.m */; };
+		77C4AA951C4D24FA006917CA /* AHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C4AA941C4D24FA006917CA /* AHTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		77998CEA1C044AB800B33AF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77998CF61C044B1700B33AF1 /* AHRandomArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHRandomArray.h; sourceTree = "<group>"; };
 		77998CF71C044B1700B33AF1 /* AHRandomArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHRandomArray.m; sourceTree = "<group>"; };
+		77C4AA931C4D24FA006917CA /* AHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHTableViewController.h; sourceTree = "<group>"; };
+		77C4AA941C4D24FA006917CA /* AHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				774638781C06E2C600928626 /* resource */,
 				77998CF61C044B1700B33AF1 /* AHRandomArray.h */,
 				77998CF71C044B1700B33AF1 /* AHRandomArray.m */,
+				77C4AA931C4D24FA006917CA /* AHTableViewController.h */,
+				77C4AA941C4D24FA006917CA /* AHTableViewController.m */,
 				77998CC31C044AB800B33AF1 /* AppDelegate.h */,
 				77998CC41C044AB800B33AF1 /* AppDelegate.m */,
 				77998CC61C044AB800B33AF1 /* ViewController.h */,
@@ -295,6 +300,7 @@
 			files = (
 				77998CC81C044AB800B33AF1 /* ViewController.m in Sources */,
 				77998CCE1C044AB800B33AF1 /* Random_selector.xcdatamodeld in Sources */,
+				77C4AA951C4D24FA006917CA /* AHTableViewController.m in Sources */,
 				77998CC51C044AB800B33AF1 /* AppDelegate.m in Sources */,
 				77998CF81C044B1700B33AF1 /* AHRandomArray.m in Sources */,
 				77998CC21C044AB800B33AF1 /* main.m in Sources */,

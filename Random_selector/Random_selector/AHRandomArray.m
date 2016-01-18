@@ -8,37 +8,63 @@
 
 #import "AHRandomArray.h"
 
+@interface AHRandomArray ()
+
+@property (nonatomic, copy) NSMutableArray *privateItems;
+
+@end
+
+
 @implementation AHRandomArray
 
-@synthesize dataArray;
+@synthesize privateItems = _privateItems;
 
 #pragma mark init
-- (instancetype)init
-{
+
++ (instancetype)sharedItems {
+    static AHRandomArray *sharedItems = nil;
+    
+    if (!sharedItems) {
+        sharedItems = [[self alloc] initPriviate];
+    }
+    
+    return sharedItems;
+}
+
+- (instancetype)initPriviate {
     self = [super init];
     if (self) {
-        self.dataArray = [NSMutableArray array];
+        _privateItems = [NSMutableArray array];
     }
     return self;
 }
 
+- (instancetype)init {
+    @throw [NSException exceptionWithName:@"Singleton" reason:@"Use +[AHRandomArray sharedItems]" userInfo:nil];
+}
+
+#pragma get dataArray
+- (NSArray *)dataArray {
+    return self.privateItems;
+}
+
 #pragma mark add candidate item
 - (void)add:(NSString *)object {
-    [self.dataArray addObject:object];
+    [self.privateItems addObject:object];
 }
 
 #pragma mark remove candidate item
-- (void)remove:(NSString *)object {
-    [self.dataArray removeObject:object];
+- (void)removeAtIndex:(NSInteger)index {
+    [self.privateItems removeObjectAtIndex:index];
 }
 
 #pragma mark generator random reslut
 - (NSString *)generator {
     NSMutableString *resultString;
-    int arrayCount = (unsigned) [dataArray count];
+    int arrayCount = (unsigned) [self.privateItems count];
     if (arrayCount) {
         resultString = [NSMutableString stringWithString:@"随机选择的结果为："];
-        NSString *result = dataArray[arc4random_uniform(arrayCount )];
+        NSString *result = self.privateItems[arc4random() % arrayCount];
         [resultString appendString:result];
     } else {
         resultString = [NSMutableString stringWithString:@"没有候选项"];
@@ -47,16 +73,16 @@
 }
 
 #pragma mark clear candidate array
-- (void)clear{
-    [dataArray removeAllObjects];
+- (void)clear {
+    [self.privateItems removeAllObjects];
 }
 
 - (NSUInteger)count {
-    return [dataArray count];
+    return [self.privateItems count];
 }
 
 - (NSString *)dataAtInedx:(NSUInteger)index {
-    return dataArray[index];
+    return self.privateItems[index];
 }
 
 @end

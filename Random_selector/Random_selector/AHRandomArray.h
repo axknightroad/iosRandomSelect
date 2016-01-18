@@ -10,10 +10,12 @@
 
 @interface AHRandomArray : NSObject
 
-@property (strong, nonatomic) NSMutableArray *dataArray;
+@property (readonly, nonatomic) NSArray *dataArray;
+
++ (instancetype)sharedItems;
 
 - (void)add:(NSString *)object;
-- (void)remove:(NSString *)object;
+- (void)removeAtIndex:(NSInteger)index;
 - (NSString *)generator;
 - (void)clear;
 
